@@ -1,5 +1,9 @@
-export function Post(){
+export function Post(props){
+  const {author, content} = props;
   return (
-    <p>Post</p>
+    <>
+     <strong>{author}</strong>
+     <p>{content}</p>
+    </>
   )
 }
