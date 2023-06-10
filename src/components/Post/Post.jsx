@@ -1,3 +1,4 @@
+import { Avatar } from '../Avatar/Avatar';
 import { Comment } from '../Comment/Comment';
 import styles from './Post.module.css';
 
@@ -6,7 +7,10 @@ export function Post(){
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img className={styles.avatar} src="https://media.licdn.com/dms/image/C4D03AQGDMiwfIU7Vig/profile-displayphoto-shrink_800_800/0/1660323966985?e=1691625600&amp;v=beta&amp;t=3LezdeKoWKlgYWC67jyHWjToQYLCyDro5GNMQGKmRKg"/>
+          <Avatar 
+            src="https://media.licdn.com/dms/image/C4D03AQGDMiwfIU7Vig/profile-displayphoto-shrink_800_800/0/1660323966985?e=1691625600&amp;v=beta&amp;t=3LezdeKoWKlgYWC67jyHWjToQYLCyDro5GNMQGKmRKg"
+          />
+
           <div className={styles.authorInfo}>
             <strong>
               Jhonatan Holanda
